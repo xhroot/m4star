@@ -1,10 +1,11 @@
 console.log('mainjs start.');
 
-var onDocLoad = () => {
+const onDocLoad = () => {
   console.log('onLoad');
 
   // Activate media carousel.
-  $('.carousel').carousel()
+  const carouselAnchor = document.querySelector('.carousel');
+  const carousel = new bootstrap.Carousel(carouselAnchor);
 };
 
-$(onDocLoad);
+document.addEventListener('DOMContentLoaded', onDocLoad);

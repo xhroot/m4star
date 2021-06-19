@@ -1,0 +1,35 @@
+const feedData = // REMOVE THIS LINE FOR TRUE JSON FILE LOAD
+[
+  {
+    "date": "June 16, 2021",
+    "message": "Today's new clan challenges:",
+    "list": [
+      "Search and Destroy: Holger kills",
+      "BR: points for each custom weapon in airdrop"
+    ]
+  },
+  {
+    "date": "June 16, 2021",
+    "message": "Today's new clan challenges:",
+    "list": [
+      "Search and Destroy: Holger kills",
+      "BR: points for each custom weapon in airdrop"
+    ]
+  },
+  {
+    "date": "June 15, 2021",
+    "message": "New clan challenge:",
+    "list": [
+      "Secondary School: one shot one kill pistol"
+    ]
+  },
+  {
+   "date": "June 14, 2021",
+    "message": "Check out the new clan challenges:",
+    "list": [
+      "Destroy vehicles in BR (voltic already does this for free)",
+      "Throwables in Domination",
+      "UAV's in Deathmatch"
+    ]
+  }
+]
