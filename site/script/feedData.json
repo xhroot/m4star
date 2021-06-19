@@ -1,11 +1,12 @@
 const feedData = // REMOVE THIS LINE FOR TRUE JSON FILE LOAD
 [
   {
-    "date": "June 16, 2021",
-    "message": "Today's new clan challenges:",
+    "date": "June 19, 2021",
+    "message": "Active clan challenges:",
     "list": [
+      "Sniper gunfight kills",
       "Search and Destroy: Holger kills",
-      "BR: points for each custom weapon in airdrop"
+      "Ranked Hardpoint kills"
     ]
   },
   {
