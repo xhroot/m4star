@@ -9,7 +9,6 @@ const Feed = (props) => props.feedItems.map(x =>
 );
 
 const FeedItem = (props) => {
-  // TODO: Only render 3
   // TODO: Hey is "key" working?
   return (
     <div class="card">
@@ -28,4 +27,4 @@ const FeedItem = (props) => {
       </div>
     </div>
   );
-}
+};

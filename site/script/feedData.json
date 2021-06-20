@@ -1,5 +1,11 @@
-const feedData = // REMOVE THIS LINE FOR TRUE JSON FILE LOAD
 [
+  {
+    "date": "June 20, 2021",
+    "message": "New clan challenges:",
+    "list": [
+      "???"
+    ]
+  },
   {
     "date": "June 19, 2021",
     "message": "Active clan challenges:",
@@ -32,5 +38,9 @@ const feedData = // REMOVE THIS LINE FOR TRUE JSON FILE LOAD
       "Throwables in Domination",
       "UAV's in Deathmatch"
     ]
+  },
+  {
+    "date": "June 12, 2021",
+    "message": "Clan challenge victory! Kudos to the team for MK2 kills, BR snipes, prop hunting, gravity spiking, transform shielding and much more."
   }
 ]
