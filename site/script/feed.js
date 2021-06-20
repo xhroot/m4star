@@ -8,23 +8,20 @@ const Feed = (props) => props.feedItems.map(x =>
   />
 );
 
-const FeedItem = (props) => {
-  // TODO: Hey is "key" working?
-  return (
-    <div class="card">
-      <div class="card-header">{props.feedDate}</div>
-      <div class="card-body">
-        <p class="card-text">
-          {props.feedMessage}
-          <ul>
-            {props.feedList ? 
-              props.feedList.map((x, idx) => 
-                <li key={idx}>{x}</li>
-              ) : null
-            }
-          </ul>
-        </p>
-      </div>
+const FeedItem = (props) => 
+  <div class="card">
+    <div class="card-header">{props.feedDate}</div>
+    <div class="card-body">
+      <p class="card-text">
+        {props.feedMessage}
+        <ul>
+          {props.feedList ? 
+            props.feedList.map((x, idx) => 
+              <li key={idx}>{x}</li>
+            ) : null
+          }
+        </ul>
+      </p>
     </div>
-  );
-};
+  </div>
+;

@@ -17,6 +17,9 @@ color: black;
 padding: 0px;
 }
 
+dl i {
+	padding-right: 10px;
+}
 dt {
 font-size: larger;
 }

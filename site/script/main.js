@@ -1,17 +1,20 @@
-const onDomLoad = () => {
-  console.log('DOMContentLoaded fired.');
+// Constants.
+// Post DOM-construction actions.
 
-  // Activate media carousel.
-  const carouselAnchor = document.querySelector('.carousel');
-  const carousel = new bootstrap.Carousel(carouselAnchor);
-};
-
-document.addEventListener('DOMContentLoaded', onDomLoad);
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('`DOMContentLoaded` fired.');
+});
 
 // Only show the first N feed items.
 const FEED_LIMIT = 5;
 
+// Async initialization.
 (async () => {
+  ReactDOM.render(
+    <Slideshow/>,
+    document.getElementById('slideshowAnchor')
+  );
+
   const feedData = await (await fetch('script/feedData.json')).json();
 
   ReactDOM.render(
