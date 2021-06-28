@@ -51,7 +51,7 @@ ReactDOM.render(
 // No top level async yet.  Any async task needs to go in here.
 (async () => {
 
-  const feedData = await (await fetch('script/feedData.v1017.json')).json();
+  const feedData = await (await fetch('script/feedData.v1019.json')).json();
 
   ReactDOM.render(
     <Feed feedItems={feedData.slice(0, FEED_LIMIT)} />,
