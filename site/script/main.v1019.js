@@ -50,8 +50,10 @@ ReactDOM.render(
 
 // No top level async yet.  Any async task needs to go in here.
 (async () => {
-
-  const feedData = await (await fetch('script/feedData.v1019.json')).json();
+  // Cache bust every `cacheDelay` milliseconds seconds.
+  const cacheDelay = 20 * 1000; // currently 20 seconds
+  const cacheUntil = Math.ceil((new Date().getTime())/cacheDelay)*cacheDelay;
+  const feedData = await (await fetch(`script/feedData.v1019.json?cacheUntil=${cacheUntil}`)).json();
 
   ReactDOM.render(
     <Feed feedItems={feedData.slice(0, FEED_LIMIT)} />,
