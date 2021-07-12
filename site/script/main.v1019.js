@@ -53,7 +53,8 @@ ReactDOM.render(
   // Cache bust every `cacheDelay` milliseconds seconds.
   const cacheDelay = 20 * 1000; // currently 20 seconds
   const cacheUntil = Math.ceil((new Date().getTime())/cacheDelay)*cacheDelay;
-  const feedData = await (await fetch(`script/feedData.v1019.json?cacheUntil=${cacheUntil}`)).json();
+  const url = `https://jsonblob.com/api/jsonBlob/d07cf9dc-e2a3-11eb-a96b-b5cfd8f6646d?cacheUntil=${cacheUntil}`
+  const feedData = await (await fetch(url)).json();
 
   ReactDOM.render(
     <Feed feedItems={feedData.slice(0, FEED_LIMIT)} />,
